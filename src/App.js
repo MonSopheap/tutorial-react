@@ -3,7 +3,8 @@ import React from 'react';
 import {
   BrowserRouter,
   Routes,
-  Route
+  Route,
+  HashRouter
 } from 'react-router-dom';
 
 import Dashboard from "./pages/dashboard/Dashboard";
@@ -31,7 +32,8 @@ import HomePage from './pages/home/Home';
 const App = () => {
   return (
     <>
-      <BrowserRouter>
+      {/* react project not work on gitpages 😲😲 || github page not support browser router */}
+      <HashRouter>
         <AuthContextProvider>
           <RootLayout>
             <Routes>
@@ -69,7 +71,7 @@ const App = () => {
             </Routes>
           </RootLayout>
         </AuthContextProvider>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
