@@ -4,7 +4,6 @@ import {
   BrowserRouter,
   Routes,
   Route,
-  HashRouter
 } from 'react-router-dom';
 
 import Dashboard from "./pages/dashboard/Dashboard";
@@ -33,13 +32,13 @@ const App = () => {
   return (
     <>
       {/* react project not work on gitpages 😲😲 || github page not support browser router */}
-      <HashRouter>
+      <BrowserRouter>
         <AuthContextProvider>
           <RootLayout>
             <Routes>
-              <Route path='/auth/login' element={<LoginForm />}></Route>
-              <Route path='/auth/register' element={<RegisterForm />}></Route>
-              <Route path='/auth/reset-password' element={<ResetPassword />}></Route>
+              <Route path='auth/login' element={<LoginForm />}></Route>
+              <Route path='auth/register' element={<RegisterForm />}></Route>
+              <Route path='auth/reset-password' element={<ResetPassword />}></Route>
 
               <Route path='/'
                 element={
@@ -47,12 +46,12 @@ const App = () => {
                     <HomePage />
                   </ProtectedRoute>
                 }></Route>
-              <Route path='/dashboard' element={<ProtectedRoute><Dashboard /></ProtectedRoute>}></Route>
-              <Route path='/about' element={<ProtectedRoute><AboutUsPage /></ProtectedRoute>}></Route>
-              <Route path='/contact' element={<ProtectedRoute><ContactPage /></ProtectedRoute>}></Route>
-              <Route path='/pos' element={<ProtectedRoute><POSPage /></ProtectedRoute>}></Route>
+              <Route path='dashboard' element={<ProtectedRoute><Dashboard /></ProtectedRoute>}></Route>
+              <Route path='about' element={<ProtectedRoute><AboutUsPage /></ProtectedRoute>}></Route>
+              <Route path='contact' element={<ProtectedRoute><ContactPage /></ProtectedRoute>}></Route>
+              <Route path='pos' element={<ProtectedRoute><POSPage /></ProtectedRoute>}></Route>
 
-              <Route path="/documents"
+              <Route path="documents"
                 element={
                   <ProtectedRoute>
                     <MyDocuments />
@@ -71,7 +70,7 @@ const App = () => {
             </Routes>
           </RootLayout>
         </AuthContextProvider>
-      </HashRouter>
+      </BrowserRouter>
     </>
   );
 }
