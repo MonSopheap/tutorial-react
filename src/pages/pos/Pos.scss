@@ -1,0 +1,67 @@
+.container-pos {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    background-color: white;
+
+    $width: 350px;
+
+    .left-mainboard {
+        width: calc(100% - 350px);
+        height: 100%;
+        // background-color: antiquewhite;
+        background-color: white;
+        overflow-y: auto;
+
+        .contain-item-box {
+            width: 100%;
+
+            .item-box {
+                position: relative;
+                width: 100%;
+                height: 100px;
+                cursor: pointer;
+                overflow: hidden;
+
+                .content-item {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                }
+
+                .box-overlay {
+                    position: absolute;
+                    display: none;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(159, 159, 159, 0.5);
+
+                    .icon-add-item {
+                        font-size: 20px;
+                        color: rgb(77, 77, 77);
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+
+                &:hover .box-overlay {
+                    display: block;
+                }
+            }
+        }
+
+    }
+
+    .right-mainboard {
+        width: $width;
+        height: 100%;
+        background-color: #d0e1fd;
+        // background-color: white;
+    }
+}

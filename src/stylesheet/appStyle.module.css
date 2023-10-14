@@ -1,0 +1,15 @@
+.error {
+    color: red;
+}
+
+.sucess {
+    color: green;
+}
+
+.warning {
+    color: orange;
+}
+
+.info {
+    color: rgb(0, 0, 255);
+}

@@ -1,0 +1,26 @@
+.my-appbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 10000;
+    height: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #082f49;
+
+    font-family: Poppins, Arial;
+
+    .navbar-left {
+        display: flex;
+        font-size: 10pt;
+    }
+
+    .navbar-right {
+        display: flex;
+        font-size: 10pt;
+    }
+}
