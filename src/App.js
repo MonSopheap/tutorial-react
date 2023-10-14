@@ -35,22 +35,22 @@ const App = () => {
         <AuthContextProvider>
           <RootLayout>
             <Routes>
-              <Route path='auth/login' element={<LoginForm />}></Route>
-              <Route path='auth/register' element={<RegisterForm />}></Route>
-              <Route path='auth/reset-password' element={<ResetPassword />}></Route>
+              <Route path='/auth/login' element={<LoginForm />}></Route>
+              <Route path='/auth/register' element={<RegisterForm />}></Route>
+              <Route path='/auth/reset-password' element={<ResetPassword />}></Route>
 
-              <Route path='/tutorial-react'
+              <Route path='/'
                 element={
                   <ProtectedRoute>
                     <HomePage />
                   </ProtectedRoute>
                 }></Route>
-              <Route path='dashboard' element={<ProtectedRoute><Dashboard /></ProtectedRoute>}></Route>
-              <Route path='about' element={<ProtectedRoute><AboutUsPage /></ProtectedRoute>}></Route>
-              <Route path='contact' element={<ProtectedRoute><ContactPage /></ProtectedRoute>}></Route>
-              <Route path='pos' element={<ProtectedRoute><POSPage /></ProtectedRoute>}></Route>
+              <Route path='/dashboard' element={<ProtectedRoute><Dashboard /></ProtectedRoute>}></Route>
+              <Route path='/about' element={<ProtectedRoute><AboutUsPage /></ProtectedRoute>}></Route>
+              <Route path='/contact' element={<ProtectedRoute><ContactPage /></ProtectedRoute>}></Route>
+              <Route path='/pos' element={<ProtectedRoute><POSPage /></ProtectedRoute>}></Route>
 
-              <Route path="documents"
+              <Route path="/documents"
                 element={
                   <ProtectedRoute>
                     <MyDocuments />
