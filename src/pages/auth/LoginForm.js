@@ -134,7 +134,7 @@ function LoginForm() {
 
                         <a href="#" onClick={handleLoginWithGoogle} className='hover:text-blue-500 font-semibold text-sm '>
                             <button type="button"
-                                className="w-full text-center py-3 my-2 border flex space-x-2 items-center justify-center border-slate-200 rounded-md text-slate-500 hover:border-slate-300 hover:text-slate-800 hover:shadow transition duration-150">
+                                className="w-full text-center py-3 my-2 border flex space-x-2 items-center justify-center border-slate-200 rounded-md text-slate-500 hover:border-slate-300 hover:bg-blue-50 hover:text-slate-800 transition duration-150">
                                 <img src="https://www.svgrepo.com/show/355037/google.svg" className="w-5 h-5" alt="..." />
                                 <span className="dark:text-gray-300">
                                     Login with Google
@@ -143,7 +143,7 @@ function LoginForm() {
                         </a>
                         <a href="#" className='hover:text-blue-500 font-semibold text-sm ' onClick={handleFacebookLogin}>
                             <button type="button"
-                                className="w-full text-center py-3 my-2 border flex space-x-2 items-center justify-center border-slate-200 rounded-md text-slate-500 hover:border-slate-300 hover:text-slate-800 hover:shadow transition duration-150">
+                                className="w-full text-center py-3 my-2 border flex space-x-2 items-center justify-center border-slate-200 rounded-md text-slate-500 hover:border-slate-300 hover:bg-blue-50 hover:text-slate-800 transition duration-150">
                                 <img src="https://i.pinimg.com/originals/ce/d6/6e/ced66ecfc53814d71f8774789b55cc76.png" className="w-5 h-5" alt="..." />
                                 <span className="dark:text-gray-300">
                                     Login with Facebook
