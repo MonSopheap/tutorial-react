@@ -1,5 +1,5 @@
 {
-  "homepage": "https//MonSopheap.github.io/tutorial-react",
+  "homepage": "https://monsopheap.github.io/tutorial-react",
   "proxy": "http://localhost:3000",
   "name": "tutorial_app",
   "version": "0.1.0",

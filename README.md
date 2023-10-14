@@ -128,6 +128,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 # DEPLOY IN GITHUB
 - npm install gh-pages --save-dev
 
+# CLIENT SITE ROUTE
+- https://blog.logrocket.com/client-side-routing-react-react-location/
+
+# REFRESH IN GITHUB PAGE NOT FOUND
+- Search: spa github page
+- https://github.com/rafgraph/spa-github-pages
+- https://www.youtube.com/watch?v=fuGu-Ponjf8
+
 
 
 

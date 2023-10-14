@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
-import './DocStyle.scss'
+import './DocStyle.css'
 import { motion } from "framer-motion"
 import {
     NavLink, useLocation,
