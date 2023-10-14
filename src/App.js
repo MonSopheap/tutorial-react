@@ -34,7 +34,7 @@ const App = () => {
       <BrowserRouter>
         <AuthContextProvider>
           <RootLayout>
-            <Routes basename="/tutorial-react">
+            <Routes>
               <Route path='auth/login' element={<LoginForm />}></Route>
               <Route path='auth/register' element={<RegisterForm />}></Route>
               <Route path='auth/reset-password' element={<ResetPassword />}></Route>
