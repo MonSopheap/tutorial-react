@@ -31,11 +31,10 @@ import HomePage from './pages/home/Home';
 const App = () => {
   return (
     <>
-      {/* react project not work on gitpages 😲😲 || github page not support browser router */}
       <BrowserRouter>
         <AuthContextProvider>
           <RootLayout>
-            <Routes>
+            <Routes name="app" path="/">
               <Route path='auth/login' element={<LoginForm />}></Route>
               <Route path='auth/register' element={<RegisterForm />}></Route>
               <Route path='auth/reset-password' element={<ResetPassword />}></Route>
