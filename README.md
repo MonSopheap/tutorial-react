@@ -127,6 +127,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 # DEPLOY IN GITHUB
 - npm install gh-pages --save-dev
+- https://whataboutcoding.com/host-react-js-website-live-on-the-internet-using-github/
 
 # CLIENT SITE ROUTE
 - https://blog.logrocket.com/client-side-routing-react-react-location/

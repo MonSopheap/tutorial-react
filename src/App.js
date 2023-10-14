@@ -4,6 +4,7 @@ import {
   BrowserRouter,
   Routes,
   Route,
+  HashRouter,
 } from 'react-router-dom';
 
 import Dashboard from "./pages/dashboard/Dashboard";
@@ -31,7 +32,7 @@ import HomePage from './pages/home/Home';
 const App = () => {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename='/tutorial-react'>
         <AuthContextProvider>
           <RootLayout>
             <Routes name="app" path="/">
