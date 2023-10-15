@@ -178,8 +178,8 @@ function MyDocuments() {
                     </div>
 
                     {/* Menu */}
-                    <div className="flex flex-col  h-full">
-                        <ul className="whitespace-pre px-2.5 py-2 text-[0.9rem] flex flex-col gap-1  font-medium overflow-x-hidden scrollbar-thin scrollbar-track-white scrollbar-thumb-slate-100   md:h-[68%] h-[70%]">
+                    <div className="flex flex-col h-full">
+                        <ul className="h-[calc(100%-200px)] whitespace-pre px-2.5 py-2 text-[0.9rem] flex flex-col gap-1  font-medium overflow-x-hidden scrollbar-thin scrollbar-track-white scrollbar-thumb-slate-100">
                             <li>
                                 <NavLink to={"/documents/p"} className="link hover:bg-blue-100">
                                     <AiOutlineAppstore size={23} className="min-w-max" />
@@ -219,7 +219,7 @@ function MyDocuments() {
                             </li>
                         </ul>
                         {open && (
-                            <div className="flex-1 text-sm z-50  my-auto  whitespace-pre   w-full  font-medium  ">
+                            <div className="flex-1 h-[200px] text-sm z-50  my-auto  whitespace-pre w-full font-medium overflow-x-hidden scrollbar-thin scrollbar-track-white scrollbar-thumb-slate-100">
                                 <div className="flex border-y border-slate-200 p-2 items-center justify-between">
                                     <div>
                                         <p>Spark</p>
