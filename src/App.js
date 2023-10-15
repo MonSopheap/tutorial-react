@@ -40,7 +40,7 @@ const App = () => {
               <Route path='auth/register' element={<RegisterForm />}></Route>
               <Route path='auth/reset-password' element={<ResetPassword />}></Route>
 
-              <Route path='/'
+              <Route path=''
                 element={
                   <ProtectedRoute>
                     <HomePage />
