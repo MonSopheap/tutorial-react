@@ -204,8 +204,8 @@ function MyDocuments() {
                                     <small className="pl-3 text-slate-500 inline-block mb-2">
                                         Product categories
                                     </small>
-                                    {menuList?.map((menu, index) => (
-                                        <div key={index} className="flex flex-col gap-1">
+                                    {menuList?.map((menu) => (
+                                        <div key={menu.name} className="flex flex-col gap-1">
                                             <SubMenu data={menu} />
                                         </div>
                                     ))}
@@ -219,7 +219,7 @@ function MyDocuments() {
                             </li>
                         </ul>
                         {open && (
-                            <div className="flex-1 text-sm z-50  max-h-44 my-auto  whitespace-pre   w-full  font-medium  ">
+                            <div className="flex-1 text-sm z-50  my-auto  whitespace-pre   w-full  font-medium  ">
                                 <div className="flex border-y border-slate-200 p-2 items-center justify-between">
                                     <div>
                                         <p>Spark</p>
