@@ -1,12 +1,9 @@
 import React from 'react';
-import DialogComponent from '../../components/Dialog.component';
 
 function ContactPage() {
     return (
         <>
-            <div>
-                <DialogComponent />
-            </div>
+            <h1 className='text-2xl'>Contact Page</h1>
 
         </>
     );

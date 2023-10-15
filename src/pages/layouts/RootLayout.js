@@ -1,5 +1,4 @@
 import React from 'react';
-import { UserAuth } from '../../contexts/AuthContextFirebase';
 import MyAppBar from './AppBar';
 
 // Layout Component

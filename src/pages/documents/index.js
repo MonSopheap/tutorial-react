@@ -204,8 +204,8 @@ function MyDocuments() {
                                     <small className="pl-3 text-slate-500 inline-block mb-2">
                                         Product categories
                                     </small>
-                                    {menuList?.map((menu) => (
-                                        <div key={menu.name} className="flex flex-col gap-1">
+                                    {menuList?.map((menu, index) => (
+                                        <div key={index} className="flex flex-col gap-1">
                                             <SubMenu data={menu} />
                                         </div>
                                     ))}
